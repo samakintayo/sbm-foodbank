@@ -108,7 +108,7 @@ const Index = () => {
         <div className="w-full px-6 sm:px-8 md:px-12 lg:px-24 max-w-4xl mx-auto space-y-5">
           <Heart className="w-10 h-10 text-yellow-400 mx-auto" />
           <h2 className="text-2xl sm:text-3xl font-bold">
-            Together, We Can Make a Difference
+            Together, we can restore thirsty souls with a smile and hope.
           </h2>
           <p className="text-base sm:text-lg text-yellow-100">
             Together, we can bring hope and help to those in need.
@@ -117,14 +117,22 @@ const Index = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="w-full bg-purple-950 text-center text-yellow-400 py-6 sm:py-8">
-        <div className="px-6 sm:px-8 md:px-12">
+      <footer className="w-full bg-purple-950 text-center text-yellow-400 py-6 sm:py-8 space-y-3">
+        <div className="px-6 sm:px-8 md:px-12 space-y-2">
           <p className="font-semibold text-base sm:text-lg">
             Spreading Bible Mission UK – Foodbank Centre
           </p>
-          <p className="text-yellow-200 text-sm mt-1">
-            Providing emergency food support with dignity and compassion.
+          <p className="text-yellow-200 text-sm sm:text-base">
+            Providing emergency food support for the needy with love and passion for souls.
           </p>
+
+          <div className="text-sm sm:text-base mt-3 space-y-1">
+            <p>Email: <a href="mailto:spreadingbibleuk@gmail.com" className="underline hover:text-yellow-300">spreadingbibleuk@gmail.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/spreadingbiblemissionuk" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">Spreading Bible Mission UK</a></p>
+            <p>TikTok: <a href="https://www.tiktok.com/@spreadingbiblemissionuk" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">spreading bible mission uk</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/spreadingbiblemissionuk" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">Spreading Bible Mission UK</a></p>
+            <p>Tel.: 0161 223 7511 | Mob: 07485 086516</p>
+          </div>
         </div>
       </footer>
     </main>
