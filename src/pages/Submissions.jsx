@@ -107,17 +107,18 @@ const Submissions = () => {
           />
 
           <div className="flex gap-2">
-            <button
-              onClick={downloadCSV}
-              className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
-            >
-              Download CSV
-            </button>
+        
             <button
               onClick={downloadPDF}
               className="bg-purple-100 hover:bg-purple-200 text-purple-800 px-4 py-2 rounded-lg text-sm font-medium transition"
             >
               Download PDF
+            </button>
+                <button
+              onClick={downloadCSV}
+              className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+            >
+              Download CSV
             </button>
           </div>
         </div>
