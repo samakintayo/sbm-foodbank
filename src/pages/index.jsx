@@ -1,8 +1,11 @@
 import FoodSupportForm from "../components/FoodSupportForm";
 import { Heart } from "lucide-react";
 import heroImage from "../assets/hero.jpeg";
+import foodBank from "../assets/foodbank.png";
 import foodItem1 from "../assets/food-item1.jpg"; // basket/fruits
 import foodItem2 from "../assets/food-item2.jpeg"; // canned food
+import { Mail, Phone, MapPin, Instagram, Facebook, Music } from "lucide-react";
+
 
 const Index = () => {
   return (
@@ -39,43 +42,43 @@ const Index = () => {
       </section>
 
       {/* ABOUT / MISSION SECTION */}
-      <section className="relative w-full py-12 sm:py-16 bg-gray-50 overflow-hidden">
-        <div className="w-full px-6 sm:px-8 md:px-14 lg:px-24 text-center space-y-6 relative z-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-purple-900">
-            Here to Support You
-          </h2>
+      {/* ABOUT / MISSION SECTION */}
+<section className="relative w-full py-12 sm:py-16 bg-gray-50 overflow-hidden">
+  <div className="w-full px-6 sm:px-8 md:px-14 lg:px-24 grid grid-cols-1 md:grid-cols-2 items-center gap-10 relative z-10">
 
-          <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Our foodbank works closely with local agencies such as housing associations,
-            children’s centres, and shelter homes. By collecting some basic details,
-            we can better understand your situation, offer practical guidance,
-            and prepare the right emergency food parcels for you and your household.
-          </p>
+    {/* LEFT COLUMN — TEXT */}
+    <div className="space-y-6 text-center md:text-left">
+      <h2 className="text-2xl sm:text-3xl font-bold text-purple-900">
+        Here to Support You
+      </h2>
 
-          <p className="text-base sm:text-lg text-purple-700 font-semibold">
-            Please get in touch with us today to find out how we can help.
-          </p>
-        </div>
+      <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+        Our foodbank works closely with local agencies such as housing associations,
+        children’s centres, and shelter homes. By collecting some basic details,
+        we can better understand your situation, offer practical guidance,
+        and prepare the right emergency food parcels for you and your household.
+      </p>
 
-        {/* Food Image 1 - Top Left */}
-        <div className="hidden sm:block absolute top-10 left-10 opacity-90 pointer-events-none">
-          <img
-            src={foodItem1}
-            alt="Food decoration 1"
-            className="w-28 sm:w-36 md:w-44 lg:w-52 rounded-xl shadow-md"
-          />
-        </div>
+      <p className="text-base sm:text-lg text-purple-700 font-semibold">
+        Please get in touch with us today to find out how we can help.
+      </p>
+    </div>
 
-        {/* Food Image 1 (Mobile - Relative positioning) */}
-        <div className="block sm:hidden relative flex justify-start px-4 mt-6">
-          <img
-            src={foodItem1}
-            alt="Food decoration mobile 1"
-            className="w-24 rounded-xl shadow-md opacity-90"
-          />
-        </div>
-      </section>
+    {/* RIGHT COLUMN — IMAGE */}
+    <div className="flex justify-center md:justify-end">
+      <div className="w-full md:w-4/5">
+        <img
+          src={foodBank}
+          alt="Food support illustration"
+          className="w-full h-auto rounded-xl shadow-md opacity-95 object-cover"
+        />
+      </div>
+    </div>
 
+  </div>
+</section>
+
+     
       {/* FORM SECTION */}
       <section className="relative w-full py-10 sm:py-12 bg-white overflow-hidden">
         <div className="w-full px-6 sm:px-8 md:px-12 lg:px-24">
@@ -103,40 +106,122 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="w-full py-12 sm:py-16 bg-gradient-to-b from-purple-800 to-purple-900 text-center text-white">
-        <div className="w-full px-6 sm:px-8 md:px-12 lg:px-24 max-w-4xl mx-auto space-y-5">
-          <Heart className="w-10 h-10 text-yellow-400 mx-auto" />
-          <h2 className="text-2xl sm:text-3xl font-bold">
-            Together, we can restore thirsty souls with a smile and hope.
-          </h2>
-          <p className="text-base sm:text-lg text-yellow-100">
-            Together, we can bring hope and help to those in need.
-          </p>
-        </div>
-      </section>
+     {/* CTA SECTION */}
+<section className="w-full py-12 sm:py-16 bg-gradient-to-b from-purple-800 to-purple-900 text-white overflow-hidden">
+  <div className="w-full px-6 sm:px-8 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto">
+
+    {/* LEFT COLUMN — TEXT */}
+    <div className="space-y-5 text-center md:text-left">
+      <Heart className="w-10 h-10 text-yellow-400 mx-auto md:mx-0" />
+      <h2 className="text-2xl sm:text-3xl font-bold">
+        Together, we can restore thirsty souls with a smile and hope.
+      </h2>
+      <p className="text-base sm:text-lg text-yellow-100">
+        Together, we can bring hope and help to those in need.
+      </p>
+    </div>
+
+    {/* RIGHT COLUMN — IMAGE */}
+    <div className="flex justify-center md:justify-end">
+      <div className="w-full md:w-full">
+        <img
+          src={foodItem1}
+          alt="Food decoration 2"
+          className="w-full h-auto rounded-xl shadow-md opacity-90 object-cover"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* FOOTER */}
-      <footer className="w-full bg-purple-950 text-center text-yellow-400 py-6 sm:py-8 space-y-3">
-        <div className="px-6 sm:px-8 md:px-12 space-y-2">
-          <p className="font-semibold text-base sm:text-lg">
-            Spreading Bible Mission UK – Foodbank Centre
-          </p>
-          <p className="text-yellow-200 text-sm sm:text-base">
-            Providing emergency food support for the needy with love and passion for souls.
-          </p>
+<footer className="w-full bg-purple-950 text-yellow-400 py-10 sm:py-12">
+  <div className="max-w-6xl mx-auto px-6 sm:px-8 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
-          <div className="text-sm sm:text-base mt-3 space-y-1">
-            <p>Email: <a href="mailto:spreadingbibleuk@gmail.com" className="underline hover:text-yellow-300">spreadingbibleuk@gmail.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/spreadingbiblemissionuk" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">Spreading Bible Mission UK</a></p>
-            <p>TikTok: <a href="https://www.tiktok.com/@spreadingbiblemissionuk" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">spreading bible mission uk</a></p>
-            <p>Facebook: <a href="https://www.facebook.com/spreadingbiblemissionuk" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">Spreading Bible Mission UK</a></p>
-            <p>Tel.: 0161 223 7511 | Mob: 07485 086516</p>
-          </div>
-        </div>
-      </footer>
+    {/* Column 1 — Mission */}
+    <div className="space-y-3">
+      <h3 className="text-lg sm:text-xl font-bold text-yellow-300">
+        Spreading Bible Mission UK – Foodbank Centre
+      </h3>
+      <p className="text-yellow-200 text-sm sm:text-base leading-relaxed">
+        Providing emergency food support for the needy with love and passion for souls.  
+        Together, we extend hope, care, and restoration to our community.
+      </p>
+    </div>
+
+    {/* Column 2 — Contact */}
+    <div className="space-y-3">
+      <h4 className="text-base sm:text-lg font-semibold text-yellow-300 mb-2">
+        Contact Us
+      </h4>
+      <div className="flex items-center justify-center md:justify-start gap-2 text-yellow-200">
+        <Mail className="w-4 h-4 text-yellow-400" />
+        <a href="mailto:spreadingbibleuk@gmail.com" className="hover:text-yellow-300 transition">
+          spreadingbibleuk@gmail.com
+        </a>
+      </div>
+      <div className="flex items-center justify-center md:justify-start gap-2 text-yellow-200">
+        <Phone className="w-4 h-4 text-yellow-400" />
+        <p>Tel: 0161 223 7511 &nbsp;|&nbsp; Mob: 07485 086516</p>
+      </div>
+      <div className="flex items-start justify-center md:justify-start gap-2 text-yellow-200">
+        <MapPin className="w-4 h-4 text-yellow-400 mt-1" />
+        <p className="max-w-xs">
+          Piccadilly Business Centre, Unit C Aldow Enterprise Park, Blackett Street, Manchester, England, M12 6AE
+        </p>
+      </div>
+    </div>
+
+    {/* Column 3 — Social Links */}
+    <div className="space-y-3">
+      <h4 className="text-base sm:text-lg font-semibold text-yellow-300 mb-2">
+        Connect With Us
+      </h4>
+      <div className="flex justify-center md:justify-start gap-5 text-yellow-200">
+        <a
+          href="https://instagram.com/spreadingbiblemissionuk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition"
+        >
+          <Instagram className="w-5 h-5" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@spreadingbiblemissionuk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition"
+        >
+          <Music className="w-5 h-5" />
+        </a>
+        <a
+          href="https://www.facebook.com/spreadingbiblemissionuk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition"
+        >
+          <Facebook className="w-5 h-5" />
+        </a>
+      </div>
+      <div className="flex items-start justify-center md:justify-start gap-2 text-yellow-200">
+        <MapPin className="w-4 h-4 text-yellow-400 mt-1" />
+        <p className="max-w-xs">
+          Piccadilly Business Centre, Unit C Aldow Enterprise Park, Blackett Street, Manchester, England, M12 6AE
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Divider */}
+  <div className="border-t border-purple-800 mt-8 pt-6 text-center text-xs text-yellow-200">
+    © {new Date().getFullYear()} Spreading Bible Mission UK. All Rights Reserved.
+  </div>
+</footer>
+
     </main>
-  );
+  );s
 };
 
 export default Index;
