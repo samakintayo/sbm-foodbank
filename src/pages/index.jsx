@@ -4,7 +4,10 @@ import heroImage from "../assets/hero.jpeg";
 import foodBank from "../assets/foodbank.png";
 import foodItem1 from "../assets/food-item1.jpg"; // basket/fruits
 import foodItem2 from "../assets/food-item2.jpeg"; // canned food
+import homeImgage from "../assets/home-img.jpg"; // Location Image
 import { Mail, Phone, MapPin, Instagram, Facebook, Music } from "lucide-react";
+import { SocialIcon } from 'react-social-icons'
+
 
 
 const Index = () => {
@@ -167,7 +170,7 @@ const Index = () => {
         <p>Tel: 0161 223 7511 &nbsp;|&nbsp; Mob: 07485 086516</p>
       </div>
       <div className="flex items-start justify-center md:justify-start gap-2 text-yellow-200">
-        <MapPin className="w-4 h-4 text-yellow-400 mt-1" />
+        <MapPin className="w-6 h-6 text-yellow-400 mt-1" />
         <p className="max-w-xs">
           Piccadilly Business Centre, Unit C Aldow Enterprise Park, Blackett Street, Manchester, England, M12 6AE
         </p>
@@ -186,7 +189,7 @@ const Index = () => {
           rel="noopener noreferrer"
           className="hover:text-yellow-300 transition"
         >
-          <Instagram className="w-5 h-5" />
+         <SocialIcon network="instagram" bgColor="#ffffff" fgColor="#1c023eff" className="w-5 h-5" />
         </a>
         <a
           href="https://www.tiktok.com/@spreadingbiblemissionuk"
@@ -194,22 +197,21 @@ const Index = () => {
           rel="noopener noreferrer"
           className="hover:text-yellow-300 transition"
         >
-          <Music className="w-5 h-5" />
+          <SocialIcon  network="tiktok" bgColor="#ffffff" fgColor="#1c023eff" className="w-5 h-5" />
         </a>
         <a
           href="https://www.facebook.com/spreadingbiblemissionuk"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-yellow-300 transition"
+          className="w-5 h-5 hover:text-yellow-300 transition"
         >
-          <Facebook className="w-5 h-5" />
+          <SocialIcon network="facebook" bgColor="#ffffff" fgColor="#1c023eff" className="" />
         </a>
       </div>
-      <div className="flex items-start justify-center md:justify-start gap-2 text-yellow-200">
-        <MapPin className="w-4 h-4 text-yellow-400 mt-1" />
-        <p className="max-w-xs">
-          Piccadilly Business Centre, Unit C Aldow Enterprise Park, Blackett Street, Manchester, England, M12 6AE
-        </p>
+    <div className="flex items-start py-4  justify-center md:justify-start gap-2 text-yellow-200">
+             <img className="max-w-20" src={homeImgage} alt="Foodbank Location" />
+         
+       
       </div>
     </div>
   </div>
