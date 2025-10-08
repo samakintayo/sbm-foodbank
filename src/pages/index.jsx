@@ -210,8 +210,11 @@ const Index = () => {
       </div>
     <div className="flex items-start py-4  justify-center md:justify-start gap-2 text-yellow-200">
              <img className="max-w-20" src={homeImgage} alt="Foodbank Location" />
-         
        
+      </div>
+       <div className="flex items-start py-4  justify-center md:justify-start gap-2 text-yellow-200">
+          
+       <p>Company No.- 14283910</p>
       </div>
     </div>
   </div>
